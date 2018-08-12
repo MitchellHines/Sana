@@ -1,8 +1,53 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-
-  p im mediaing
-  
+	.container.marketing
+		.row
+			.jumbotron
+				h1 Interact
+				p.lead
+				| Sana wants to keep users up to date with epidemic news and wants you to share important public health up dates with your friends and family via social media. Sana firmly believes that awareness is key to better shaping better epidemic mitigation techniques and properly allocating relief donations.
+		.row
+			.col-lg-4
+				img(src='/images/facebook.png', alt='Facebook logo', width='140', height='140')
+				h2 Facebook
+				p
+				| Update your status and let people know about how you use Sana to stay up to date on epidemic news and encourage others to contribute to relief efforts using Sana.
+				p
+					a.btn.btn-default(href='#', role='button') View Facebook Page »
+			.col-lg-4
+				img(src='/images/instagram.png', alt='Instagram logo', width='140', height='140')
+				h2 Instagram
+				p
+				| Upload your photos and stories relating to public health using the hashtag #SanaSaves
+				p
+					a.btn.btn-default(href='#', role='button') View Instagram Account »
+			.col-lg-4
+				img(src='/images/twitter.png', alt='Twitter logo', width='140', height='140')
+				h2 Twitter
+				p
+				| Follow us for breaking news about global epidemics and tweet about us using the hashtag #SanaSaves.
+				p
+					a.btn.btn-default(href='#', role='button') View Twitter Account»
+		.row
+			.col-lg-4
+				img(src='/images/snapchat.png', alt='Snapchat logo', width='140', height='140')
+				h2 Snapchat
+				p
+				| Share our Snapchat stories with your friends and family in areas affected by epidemics.
+				p
+					a.btn.btn-default(href='#', role='button') View Snapchat Story »
+			.col-lg-4
+				img(src='/images/linkedin.png', alt='LinkedIn logo', width='140', height='140')
+				h2 LinkedIn
+				p
+				| Keep your professional network aware about epidemics and the work that Sana does using the hashtag #SanaSaves
+				p
+					a.btn.btn-default(href='#', role='button') View LinkedIn Page »
+			.col-lg-4
+				img(src='/images/youtube.png', alt='YouTube logo', width='140', height='140')
+				h2 YouTube
+				p
+				| Stay tuned and subscribe for videos that educate the public on public health issues.
+				p
+					a.btn.btn-default(href='#', role='button') View YouTube Channel »
