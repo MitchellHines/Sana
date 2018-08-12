@@ -6,10 +6,10 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var playground = require('./routes/playground.js');
-var map = require('./routes/map.js');
-var donate = require('./routes/donate.js');
-var media = require('./routes/media.js');
+var playground = require('./routes/playground');
+var map = require('./routes/map');
+var donate = require('./routes/donate');
+var media = require('./routes/media');
 
 var app = express();
 

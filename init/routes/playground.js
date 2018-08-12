@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* Renders Recipe view */
-router.get('/:id', function(req, res) {
-  
+/* GET home page. */
+router.get('/', function(req, res) {
+  res.render('playground', { title: 'Express' });
 });
 
 module.exports = router;
