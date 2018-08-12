@@ -10,6 +10,7 @@ var playground = require('./routes/playground');
 var map = require('./routes/map');
 var donate = require('./routes/donate');
 var media = require('./routes/media');
+var favicon = require('serve-favicon');
 
 var app = express();
 
@@ -22,6 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(favicon(path.join(__dirname,'images','favicon.ico')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

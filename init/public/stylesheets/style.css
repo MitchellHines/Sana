@@ -192,7 +192,6 @@ body {
   font-weight: bold;
 }
 
-<<<<<<< HEAD
 .theme-dropdown .dropdown-menu {
   position: static;
   display: block;
@@ -206,7 +205,6 @@ body {
 .theme-showcase .navbar .container {
   width: auto;
 }
-=======
 
 .view-group {
     display: -ms-flexbox;
@@ -272,4 +270,8 @@ body {
 .caption .card-body{
   width: 400px;
 }
->>>>>>> 83eb6067159c158e67c8505410e4a4db8d98b9bc
+
+.progress{
+	margin: 20px;
+}
+

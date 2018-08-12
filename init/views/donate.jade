@@ -3,149 +3,199 @@ extends layout
 
 
 block content
-  script.
-    $(document).ready(function() {
-      $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
-      $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
-    });
   
   .container
     .row
-      .col-lg-12.my-3
-        .pull-right
-          .btn-group
-            button#list.btn.btn-info
-              | List View
-            |                     
-            button#grid.btn.btn-danger
-              | Grid View
-    |  
-    |     
+      .jumbotron
+        .container
+          h1 Make a Donation
+          p
+          | "Talk about donations." 
     #products.row.view-group
-      .item
+      .item.col-md-4
         .thumbnail.card
           .img-event
-            img.group.list-group-image.img-fluid(src="http://placehold.it/400x250/000/fff", alt="")
+            img.group.list-group-image.img-fluid(src="/images/first-aid-kit.png", alt="First Aid - First Aid Kit")
           |                         
           .caption.card-body
             h4.group.card-title.inner.list-group-item-heading
-              | Product title
+              | First Aid Materials
             |                             
             p.group.inner.list-group-item-text
-              | Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              | sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              | Field surgery tools, bandages, alcohol swabs, medical tape, gauze, etc.
             |                             
             .row
               .col-xs-12.col-md-6
-                p.lead
-                  | $21.000
+                label.sr-only(for='inputFirstAidMaterials') First Aid Materials Donation
+                input#inputEmail.form-control(type='currency', placeholder='Amount', required='true', autofocus='')
               |                                 
               .col-xs-12.col-md-6
-                a.btn.btn-success(href="http://www.jquery2dotnet.com") Add to cart
-      |                 
-      .item
+                a.btn.btn-success(href="#") Add to cart
+            .row
+              .progress
+                .progress-bar.progress-bar-(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                  span.sr-only 60% Complete
+      .item.col-md-4
         .thumbnail.card
           .img-event
-            img.group.list-group-image.img-fluid(src="http://placehold.it/400x250/000/fff", alt="")
+            img.group.list-group-image.img-fluid(src="/images/wood.png", alt="Building Materials - Wood")
           |                         
           .caption.card-body
             h4.group.card-title.inner.list-group-item-heading
-              | Product title
+              | Building Materials
             |                             
             p.group.inner.list-group-item-text
-              | Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              | sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              | To help build emergency facilities, rebuild homes and communities. Materials include: wood, concrete, brick, and tools associated with building efforts - hammers, nails, saws, etc.
             |                             
             .row
               .col-xs-12.col-md-6
-                p.lead
-                  | $21.000
+                label.sr-only(for='inputBuildingMaterials') Building Materials Donation
+                input#inputEmail.form-control(type='currency', placeholder='Amount', required='true', autofocus='')
               |                                 
               .col-xs-12.col-md-6
-                a.btn.btn-success(href="http://www.jquery2dotnet.com") Add to cart
-      |                 
-      .item
+                a.btn.btn-success(href="#") Add to cart
+            .row
+              .progress
+                .progress-bar.progress-bar-(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                  span.sr-only 60% Complete
+      .item.col-md-4
         .thumbnail.card
           .img-event
-            img.group.list-group-image.img-fluid(src="http://placehold.it/400x250/000/fff", alt="")
+            img.group.list-group-image.img-fluid(src="/images/diagnosis.png", alt="Medical Supplies - Stethospcope")
           |                         
           .caption.card-body
             h4.group.card-title.inner.list-group-item-heading
-              | Product title
+              | Medical Supplies
             |                             
             p.group.inner.list-group-item-text
-              | Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              | sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              | Necessary for medical professionals to treat patients: hospital beds, monitors, AEDs, IVs, surgical gloves, etc.
             |                             
             .row
               .col-xs-12.col-md-6
-                p.lead
-                  | $21.000
+                label.sr-only(for='inputMedicalSupplies') Medical Supplies Donation
+                input#inputEmail.form-control(type='currency', placeholder='Amount', required='true', autofocus='')
               |                                 
               .col-xs-12.col-md-6
-                a.btn.btn-success(href="http://www.jquery2dotnet.com") Add to cart
-      |                 
-      .item
+                a.btn.btn-success(href="#") Add to cart
+            .row
+              .progress
+                .progress-bar.progress-bar-(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                  span.sr-only 60% Complete
+    #products.row.view-group
+      .item.col-md-4
         .thumbnail.card
           .img-event
-            img.group.list-group-image.img-fluid(src="http://placehold.it/400x250/000/fff", alt="")
+            img.group.list-group-image.img-fluid(src="/images/pills.png", alt="Medication - Pills")
           |                         
           .caption.card-body
             h4.group.card-title.inner.list-group-item-heading
-              | Product title
+              | Medication
             |                             
             p.group.inner.list-group-item-text
-              | Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              | sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              | For patient recovery - antibiotics, pain killers, vaccinations, etc
             |                             
             .row
               .col-xs-12.col-md-6
-                p.lead
-                  | $21.000
+                label.sr-only(for='inputMedication') Medication Donation
+                input#inputEmail.form-control(type='currency', placeholder='Amount', required='true', autofocus='')
               |                                 
               .col-xs-12.col-md-6
-                a.btn.btn-success(href="http://www.jquery2dotnet.com") Add to cart
-      |                 
-      .item
+                a.btn.btn-success(href="#") Add to cart
+            .row
+              .progress
+                .progress-bar.progress-bar-(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                  span.sr-only 60% Complete
+      .item.col-md-4
         .thumbnail.card
           .img-event
-            img.group.list-group-image.img-fluid(src="http://placehold.it/400x250/000/fff", alt="")
+            img.group.list-group-image.img-fluid(src="/images/hazmat.png", alt="Quarantine Centers - Hazmat")
           |                         
           .caption.card-body
             h4.group.card-title.inner.list-group-item-heading
-              | Product title
+              | Quarantine Centers
             |                             
             p.group.inner.list-group-item-text
-              | Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              | sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              | For severe cases, relief efforts may require patients to be quarantined. Centers would need  hazmat suits and other specific tools required to handle quarantine patients.
             |                             
             .row
               .col-xs-12.col-md-6
-                p.lead
-                  | $21.000
+                label.sr-only(for='inputQuarantineCentetrs') Quarantine Centers Donation
+                input#inputEmail.form-control(type='currency', placeholder='Amount', required='true', autofocus='')
               |                                 
               .col-xs-12.col-md-6
-                a.btn.btn-success(href="http://www.jquery2dotnet.com") Add to cart
-      |                 
-      .item
+                a.btn.btn-success(href="#") Add to cart
+            .row
+              .progress
+                .progress-bar.progress-bar-(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                  span.sr-only 60% Complete
+      .item.col-md-4
         .thumbnail.card
           .img-event
-            img.group.list-group-image.img-fluid(src="http://placehold.it/400x250/000/fff", alt="")
+            img.group.list-group-image.img-fluid(src="/images/ambulance.png", alt="Transportation - Ambulance")
           |                         
           .caption.card-body
             h4.group.card-title.inner.list-group-item-heading
-              | Product title
+              | Transportation
             |                             
             p.group.inner.list-group-item-text
-              | Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              | sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              | Improve the supply chain and increase the number of transportation vehicles available to move resources.
             |                             
             .row
               .col-xs-12.col-md-6
-                p.lead
-                  | $21.000
+                label.sr-only(for='inputTransportation') Transportation Donation
+                input#inputEmail.form-control(type='currency', placeholder='Amount', required='true', autofocus='')
               |                                 
               .col-xs-12.col-md-6
-                a.btn.btn-success(href="http://www.jquery2dotnet.com") Add to cart
-
-
+                a.btn.btn-success(href="#") Add to cart
+            .row
+              .progress
+                .progress-bar.progress-bar-(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                  span.sr-only 60% Complete
+    #products.row.view-group
+      .item.col-md-4
+        .thumbnail.card
+          .img-event
+            img.group.list-group-image.img-fluid(src="/images/groceries.png", alt="Food - Groceries")
+          |                         
+          .caption.card-body
+            h4.group.card-title.inner.list-group-item-heading
+              | Food
+            |                             
+            p.group.inner.list-group-item-text
+              | To provide necessary sustenance to those affected. Necessities include: non-perishable items, grains, oats, vegetables, vitamins & minerals.
+            |                             
+            .row
+              .col-xs-12.col-md-6
+                label.sr-only(for='inputFood') Food Donation
+                input#inputEmail.form-control(type='currency', placeholder='Amount', required='true', autofocus='')
+              |                                 
+              .col-xs-12.col-md-6
+                a.btn.btn-success(href="#") Add to cart
+            .row
+              .progress
+                .progress-bar.progress-bar-(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                  span.sr-only 60% Complete
+      .item.col-md-4
+        .thumbnail.card
+          .img-event
+            img.group.list-group-image.img-fluid(src="/images/drops.png", alt="Water - Water Drops")
+          |                         
+          .caption.card-body
+            h4.group.card-title.inner.list-group-item-heading
+              | Water
+            |                             
+            p.group.inner.list-group-item-text
+              | Provide potable water for drinking and cleaning: bottled water & filters.
+            |                             
+            .row
+              .col-xs-12.col-md-6
+                label.sr-only(for='inputWater') Water Donation
+                input#inputEmail.form-control(type='currency', placeholder='Amount', required='true', autofocus='')
+              |                                 
+              .col-xs-12.col-md-6
+                a.btn.btn-success(href="#") Add to cart
+            .row
+              .progress
+                .progress-bar.progress-bar-(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                  span.sr-only 60% Complete
+  <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
